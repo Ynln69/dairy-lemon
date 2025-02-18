@@ -1,0 +1,14 @@
+:root {
+  --font-family: "Raleway", "serif";
+
+  --primary-color: #f4b509;
+  --light-color: #fff;
+  --background-light: #faf5ec;
+  --background-dark: #4a3817;
+  --section-bg: #8b5e3c;
+  --secondary-color: #c98e35;
+  --text-color: #1e150d;
+  --accent-green: #afbf3c;
+
+  --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

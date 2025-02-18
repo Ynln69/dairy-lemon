@@ -1,0 +1,22 @@
+.title span {
+  color: #8b4513;
+  text-decoration: underline;
+}
+.reasons-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.reason-item {
+  background-color: transparent;
+  padding: 20px;
+  border: 1px solid #8b4513;
+}
+.reason-img {
+  width: 100%;
+  height: 250px;
+}
+

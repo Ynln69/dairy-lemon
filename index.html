@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="ChocoBetLate Fair – wyjątkowa degustacja czekolady. Odkryj smaki rzemieślniczej czekolady, trufli i deserów na bazie kakao!"
+    />
+    <meta
+      name="keywords"
+      content="degustacja czekolady, rzemieślnicza czekolada, trufle, kakao, praliny, czekoladowe desery"
+    />
+    <meta
+      property="og:title"
+      content="ChocoBetLate Fair – Ekskluzywna Degustacja Czekolady"
+    />
+    <meta
+      property="og:description"
+      content="Dołącz do naszej degustacji czekolady i poznaj unikalne smaki rzemieślniczych czekolad, pralinek i trufli!"
+    />
+    <meta property="og:url" content="https://chocobetlatefair.com" />
+    <meta
+      property="og:image"
+      content="https://chocobetlatefair.com/assets/img/chocolate-background.jpg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ChocoBetLate Fair – Niezapomniana Degustacja Czekolady"
+    />
+    <meta
+      name="twitter:description"
+      content="Odkryj świat wyjątkowych czekolad – dołącz do naszej degustacji w sercu miasta!"
+    />
+
+    <title>ChocoBetLate Fair – Degustacja Czekolady</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="alternate" hreflang="pl" href="https://chocobetlatefair.com" />
+
+    <link rel="icon" type="image/png" href="./public/favicon.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ChocoBetLate Fair",
+        "url": "https://chocobetlatefair.com",
+        "image": "https://chocobetlatefair.com/assets/img/chocolate-background.jpg",
+        "description": "Ekskluzywna degustacja czekolady. Odkryj smaki rzemieślniczej czekolady, trufli i pralinek w najlepszym towarzystwie!",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Nowy Świat 15",
+          "addressLocality": "Warszawa",
+          "postalCode": "00-029",
+          "addressCountry": "PL"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+48 966 781 224",
+          "contactType": "Obsługa klienta",
+          "areaServed": "PL"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="./" class="logo"
+          ><p>ChocoBetLate Fair</p>
+          <img src="./assets/icons/logo.png" alt="logo chocolate" width="50px"
+        /></a>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="./#about">O nas</a></li>
+            <li><a href="./#advantages">Zalety</a></li>
+            <li><a href="./#tasting">Degustacja</a></li>
+            <li><a href="./#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="mainTitle">Poznaj sztukę degustacji czekolady</h1>
+          <p class="mainText">
+            Odkryj wyjątkowe smaki rzemieślniczej czekolady, trufli i deserów
+            tworzonych z najwyższej jakości kakao.
+          </p>
+          <div class="hero-image">
+            <img
+              src="./assets/img/chocolate-background.jpg"
+              alt="Czekoladowa degustacja"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="title">
+            Odkryj wyjątkowy świat czekolady z <span>ChocoBetLate Fair</span>
+          </h2>
+          <p class="mainText">
+            ChocoBetLate Fair to miejsce, gdzie pasja do czekolady spotyka się z
+            najwyższą jakością. Zapraszamy na wyjątkowe doświadczenie smakowe,
+            podczas którego poznasz różne rodzaje czekolady, ich historię oraz
+            najlepsze sposoby degustacji.
+          </p>
+          <ul class="reasons-grid">
+            <li class="reason-item">
+              <h3 class="mainSubtitle">Rzemieślnicza czekolada</h3>
+              <p class="mainDesc">
+                Nasza czekolada jest tworzona z najlepszych kakao-bobów, bez
+                sztucznych dodatków i konserwantów, oferując niezapomniany smak.
+              </p>
+            </li>
+            <li class="reason-item">
+              <h3 class="mainSubtitle">Wyjątkowe degustacje</h3>
+              <p class="mainDesc">
+                Każda degustacja to podróż przez różnorodne smaki, od
+                klasycznych tabliczek po ekskluzywne trufle i praliny.
+              </p>
+            </li>
+            <li class="reason-item">
+              <h3 class="mainSubtitle">Eksperci i pasja</h3>
+              <p class="mainDesc">
+                Nasz zespół to doświadczeni mistrzowie czekolady i sommelierzy,
+                którzy podzielą się swoją wiedzą i miłością do czekolady.
+              </p>
+            </li>
+          </ul>
+          <img
+            src="./assets/img/about.jpg"
+            alt="Odkryj wyjątkowy świat czekolady"
+            class="reason-img"
+          />
+        </div>
+      </section>
+      <section class="section advantages-section" id="advantages">
+        <div class="container">
+          <h2 class="title">Dlaczego warto wybrać ChocoBetLate Fair?</h2>
+          <div class="advantages-grid">
+            <ul class="advantage-item">
+              <img
+                src="./assets/icons/cocoa.png"
+                alt="Najwyższej jakości kakao"
+                class="icon"
+              />
+              <h3 class="mainSubtitle">Najwyższej jakości kakao</h3>
+              <p class="mainDesc">
+                Nasze czekolady są tworzone z najlepszych ziaren kakao z całego
+                świata.
+              </p>
+            </ul>
+            <div class="advantage-item">
+              <img
+                src="./assets/icons/chef.png"
+                alt="Eksperci czekolady"
+                class="icon"
+              />
+              <h3 class="mainSubtitle">Eksperci czekolady</h3>
+              <p class="mainDesc">
+                Degustacje prowadzą doświadczeni mistrzowie czekolady i
+                sommelierzy.
+              </p>
+            </div>
+            <div class="advantage-item">
+              <img
+                src="./assets/icons/workshop.png"
+                alt="Czekoladowe warsztaty"
+                class="icon"
+              />
+              <h3 class="mainSubtitle">Czekoladowe warsztaty</h3>
+              <p class="mainDesc">
+                Odkryj tajniki tworzenia ręcznie robionych pralin i
+                czekoladowych deserów.
+              </p>
+            </div>
+            <div class="advantage-item">
+              <img
+                src="./assets/icons/truffle.png"
+                alt="Wyjątkowe trufle i praliny"
+                class="icon"
+              />
+              <h3 class="mainSubtitle">Wyjątkowe trufle i praliny</h3>
+              <p class="mainDesc">
+                Nasze ręcznie robione trufle i praliny to prawdziwa uczta dla
+                podniebienia.
+              </p>
+            </div>
+            <div class="advantage-item">
+              <img
+                src="./assets/icons/map.png"
+                alt="Ekskluzywna lokalizacja"
+                class="icon"
+              />
+              <h3 class="mainSubtitle">Ekskluzywna lokalizacja</h3>
+              <p class="mainDesc">
+                Degustacja odbywa się w eleganckim miejscu w centrum miasta.
+              </p>
+            </div>
+            <div class="advantage-item">
+              <img
+                src="./assets/icons/ticket.png"
+                alt="Limitowana liczba miejsc"
+                class="icon"
+              />
+              <h3 class="mainSubtitle">Limitowana liczba miejsc</h3>
+              <p class="mainDesc">
+                Dbamy o kameralną atmosferę, aby każdy mógł w pełni cieszyć się
+                degustacją.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="tasting">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-form">
+              <h2 class="title">Skontaktuj się z nami</h2>
+              <p class="mainText">
+                Wypełnij formularz, a nasz zespół skontaktuje się z Tobą, aby
+                potwierdzić szczegóły degustacji.
+              </p>
+              <form id="contactForm">
+                <label for="name">Imię</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Twoje imię"
+                  required
+                />
+
+                <label for="phone">Numer telefonu</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+48 123 456 789"
+                  required
+                />
+
+                <button type="submit" class="submit-btn">Wyślij</button>
+              </form>
+            </div>
+            <div class="contact-image">
+              <img
+                src="./assets/img/contact.jpg"
+                alt="Czekoladowa degustacja"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="title">Lokalizacja i kontakt</h2>
+          <ul class="contact-details">
+            <li class="contact-item">
+              <h3 class="mainDesc">Adres</h3>
+              <p class="mainText">ul. Nowy Świat 15, 00-029 Warszawa</p>
+            </li>
+            <li class="contact-item">
+              <h3 class="mainDesc">Telefon</h3>
+              <p class="mainText">
+                <a href="tel:+48966781224">+48 966 781 224</a>
+              </p>
+            </li>
+            <li class="contact-item">
+              <h3 class="mainDesc">Email</h3>
+              <p class="mainText">
+                <a href="mailto:info@chocobetlatefair.com"
+                  >info@chocobetlatefair.com</a
+                >
+              </p>
+            </li>
+          </ul>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.678827572839!2d21.014274376949336!3d52.23192305404238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6c7449a4c1%3A0x8e5e6dc1b94564ed!2sNowy%20%C5%9Awiat%2015%2C%2000-029%20Warszawa%2C%20Polska!5e0!3m2!1spl!2spl!4v1707836400000!5m2!1spl!2spl"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          Wszelkie prawa zastrzeżone. Kopiowanie, rozpowszechnianie i
+          wykorzystywanie treści bez zgody jest zabronione.
+        </p>
+        <p class="footer-domain">© 2025 chocobetlatefair.com</p>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p class="mainText">Dziękujemy! Wkrótce się z Tobą skontaktujemy.</p>
+        <button class="submit-btn" id="close-modal">Zamknij</button>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>
