@@ -1,112 +1,132 @@
-.benefits-content {
-  display: flex;
-  flex-direction: column;
+.about {
+  padding-top: 100px;
 }
-.benefits-text {
-  text-align: left;
-  max-width: 600px;
-  margin-bottom: 30px;
+.about-title {
+  position: relative;
+  margin-bottom: clamp(20px, calc(10px + 5vw), 85px);
+
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+
+  @media (min-width: 1024px) {
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+      content: "";
+      width: 558px;
+      height: 6px;
+
+      background-color: var( --primary-color);
+    }
+  }
 }
-.benefits-grid {
+.about-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-top: 1px solid var(--accent-green);
+  justify-items: center;
+  @media (min-width: 1024px) {
+    grid-template-columns: 400px 1fr;
+    column-gap: 32px;
+  }
+}
+.about-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+  @media (min-width: 1024px) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.about-text {
+  margin-bottom: clamp(20px, calc(10px + 5vw), 65px);
+
+  font-size: clamp(0.875rem, 0.955vw + 0.64rem, 1.5rem);
+  line-height: clamp(1.4rem, 1.528vw + 1.025rem, 2.4rem);
 }
 
-.benefit-item {
-  padding: 20px;
+.amenities-list {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 45px;
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+  }
+}
+.amenities-wrapper {
+  position: relative;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 130px;
+  background-color: var(--primary-color);
+}
+.amenities-wrapper img {
+  position: absolute;
+  top: 0;
+  right: -30px;
+}
+.amenities-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 171%;
+  letter-spacing: -0.02em;
+}
+
+.testimonials-thumb {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: space-between;
+  @media (min-width: 1200px) {
+    grid-template-columns: 350px 450px;
+  }
+}
+.testimonials-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+}
+.testimonial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 60px;
+  border-radius: 10px;
+  box-shadow: 0 14px 65px 0 rgba(88, 88, 88, 0.1);
+  @media (min-width: 768px) {
+    &:nth-child(2) {
+      margin-left: -90px;
+      width: 90%;
+    }
+  }
+}
+.customer-info {
+  display: flex;
   align-items: center;
   gap: 15px;
-  border-right: 1px solid var(--accent-green);
-  border-bottom: 1px solid var(--accent-green);
-  @media (min-width: 768px) {
-    flex-direction: row;
-    &:nth-child(5) {
-      border-bottom: 1px solid transparent;
-    }
-    &:nth-child(6) {
-      border-bottom: 1px solid transparent;
-    }
-  }
 }
-
-.icon {
+.customer-avatar {
+  position: absolute;
+  top: 20px;
+  left: -15px;
   width: 50px;
-  height: auto;
-}
-
-.benefit-item h3 {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.benefit-item p {
-  font-size: 14px;
-  opacity: 0.9;
-}
-
-@media (max-width: 768px) {
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.reviews-section {
-  background-color: #3e2723; /* Czekoladowy brąz */
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.title {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.review-item {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.review-avatar {
-  width: 60px;
-  height: 60px;
+  height: 50px;
   border-radius: 50%;
-  margin-bottom: 15px;
 }
-
-.review-content h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.review-content p {
+.customer-name {
   font-size: 16px;
-  opacity: 0.9;
+  font-weight: bold;
+  color: #333;
 }
-
-/* Aдаптивність */
-@media (max-width: 768px) {
-  .reviews-grid {
-    grid-template-columns: 1fr;
-  }
+.customer-date {
+  font-size: 14px;
+  color: #777;
 }
