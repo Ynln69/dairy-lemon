@@ -1,11 +1,8 @@
 document
-  .getElementById("contactForm")
+  .getElementById("contact-form")
   .addEventListener("submit", function (event) {
-    event.preventDefault();
+    event.preventDefault(); 
 
-    document.getElementById("modal").style.display = "flex";
+    document.getElementById("successMessage").style.display = "block"; // Показує повідомлення
+    this.reset();
   });
-
-document.getElementById("close-modal").addEventListener("click", function () {
-  document.getElementById("modal").style.display = "none";
-});

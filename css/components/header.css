@@ -19,9 +19,9 @@
   color: var(--background-light);
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 .logo span {
+  font-family: var(--second-family);
   color: var(--accent-green);
 }
 .nav-links {
@@ -32,10 +32,12 @@
   display: inline;
 }
 .nav-links a {
+  font-family: var(--second-family);
   text-decoration: none;
   font-size: clamp(1rem, 0.693vw + 0.821rem, 1.375rem);
   line-height: clamp(1.5rem, 0.531vw + 1.363rem, 1.788rem);
   transition: color var(--time-function);
+  text-transform: uppercase;
   &:hover {
     color: var(--primary-color);
   }
@@ -50,10 +52,11 @@
   .nav {
     display: none;
     position: absolute;
-    top: 60px;
-    right: 0;
+    top: 63px;
+    left: 0;
     background-color: var(--background-dark);
     width: 40%;
+    height: 50vh;
     text-align: center;
     padding: 20px 0;
   }

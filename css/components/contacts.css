@@ -1,15 +1,30 @@
-.contact-details {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 25px;
-  margin-bottom: 30px;
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+.contact-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (min-width:768px) {
+    flex-direction: row;
   }
 }
-.map-container {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
 }
-
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.contact-item .icon {
+  font-size: 24px;
+}
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
